@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
-import Educations from "../../containers/education/Educations";
-import Certifications from "../../containers/certifications/Certifications";
-import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
-import EducationImg from "./EducationImg";
-import { competitiveSites, greeting } from "../../portfolio";
-import { certifications } from "../../portfolio";
+// import Educations from "../../containers/education/Educations";
+// import Certifications from "../../containers/certifications/Certifications";
+// import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
+// import EducationImg from "./EducationImg";
+// import { competitiveSites, greeting } from "../../portfolio";
+// import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
+// import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
 class Education extends Component {
@@ -37,7 +37,7 @@ class Education extends Component {
                   className="greeting-text-p subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {greeting.subTitle}
+                  {/* {greeting.subTitle} */}
                 </p>
                 {/* <SocialMedia theme={theme} /> */}
                 <div className="address-btn-div">

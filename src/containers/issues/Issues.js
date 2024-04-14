@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Issues.css";
 import { Fade } from "react-reveal";
-import IssueCard from "../../components/issueCard/IssueCard";
+// import IssueCard from "../../components/issueCard/IssueCard";
 // import issuesData from "../../shared/opensource/issues.json";
 
 class Issues extends Component {
