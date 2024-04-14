@@ -17,9 +17,9 @@ class Issues extends Component {
           </Fade>
         </div>
         <div className="issues-body-div">
-          {issuesData["data"].map((issue) => {
+          {/* {issuesData["data"].map((issue) => {
             return <IssueCard issue={issue} />;
-          })}
+          })} */}
         </div>
       </div>
     );
