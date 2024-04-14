@@ -20,12 +20,12 @@ function SeoHeader() {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
-  let job = experience.sections
-    ?.find((section) => section.work)
-    ?.experiences?.at(0);
+  // let mail = socialMediaLinks
+  //   .find((media) => media.link.startsWith("mailto"))
+  //   .link.substring("mailto:".length);
+  // let job = experience.sections
+  //   ?.find((section) => section.work)
+  //   ?.experiences?.at(0);
 
   let credentials = [];
   certifications.certifications.forEach((certification) => {
@@ -42,14 +42,14 @@ function SeoHeader() {
     "@type": "Person",
     name: greeting.title,
     url: seo?.og?.url,
-    email: mail,
+    email: "",
     telephone: contactPageData.phoneSection?.subtitle,
     sameAs: sameAs,
-    jobTitle: job.title,
-    worksFor: {
-      "@type": "Organization",
-      name: job.company,
-    },
+    // jobTitle: job.title,
+    // worksFor: {
+    //   "@type": "Organization",
+    //   name: job.company,
+    // },
     address: {
       "@type": "PostalAddress",
       addressLocality: contactPageData.addressSection?.locality,

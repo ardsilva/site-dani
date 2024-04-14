@@ -15,9 +15,10 @@ class DegreeCard extends Component {
                 style={{
                   maxWidth: "100%",
                   maxHeight: "100%",
-                  transform: "scale(0.9)",
+                  transform: "scale(1.1)",
+                  borderRadius: "50%",
                 }}
-                src={require(`../../assests/images/${degree.logo_path}`)}
+                src={`${degree.logo_path}`}
                 alt={degree.alt_name}
               />
             </div>
@@ -28,7 +29,7 @@ class DegreeCard extends Component {
             className="card-body"
             style={{ width: degree.logo_path ? "90%" : "100%" }}
           >
-            <div
+            {/* <div
               className="body-header"
               style={{ backgroundColor: theme.headerColor }}
             >
@@ -45,6 +46,11 @@ class DegreeCard extends Component {
                   {degree.duration}
                 </h3>
               </div>
+            </div> */}
+            <div className="body-header">
+              <h2 className="card-title" style={{ color: theme.text }}>
+                {degree.title}
+              </h2>
             </div>
             <div className="body-content">
               {degree.descriptions.map((sentence) => {
@@ -65,7 +71,7 @@ class DegreeCard extends Component {
                     style={{ backgroundColor: theme.headerColor }}
                   >
                     <p className="btn" style={{ color: theme.text }}>
-                      Visit Website
+                      Ir para o imóvel
                     </p>
                   </div>
                 </a>

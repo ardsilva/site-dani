@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "masterPortfolio",
-  "homepage": ".",
+  "name": "site-dani",
   "version": "0.1.0",
+  "homepage": ".",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
+    "start": "set \"NODE_OPTIONS=--openssl-legacy-provider\" && react-scripts start",
     "test": "react-scripts test"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "baseui": "^9.65.3",
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
+    "eslint": "^6.8.0",
     "fs": "0.0.1-security",
     "gh-pages": "^2.1.1",
     "graphql": "^14.5.8",

@@ -31,26 +31,26 @@ export default class Main extends Component {
             render={(props) => <Home {...props} theme={this.props.theme} />}
           />
           <Route
-            path="/experience"
+            path="/imoveis"
             exact
             render={(props) => (
               <Experience {...props} theme={this.props.theme} />
             )}
           />
           <Route
-            path="/education"
+            path="/quemsoueu"
             render={(props) => (
               <Education {...props} theme={this.props.theme} />
             )}
           />
-          <Route
-            path="/opensource"
+          {/* <Route
+            path="/testemunhos"
             render={(props) => (
               <Opensource {...props} theme={this.props.theme} />
             )}
-          />
+          /> */}
           <Route
-            path="/contact"
+            path="/contato"
             render={(props) => <Contact {...props} theme={this.props.theme} />}
           />
 

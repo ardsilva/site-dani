@@ -195,4 +195,18 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const daniTheme2 = {
+  body: "#1F568E",
+  text: "#ECA72C",
+  expTxtColor: "#000000",
+  highlight: "#a1dded",
+  dark: "#07292c",
+  secondaryText: "#96BDC6",
+  imageHighlight: "#0a343c",
+  compImgHighlight: "#E1E2E1",
+  jacketColor: "#E1E2E1",
+  headerColor: "#E1E2E1",
+  splashBg: "#05505E",
+};
+
+export const chosenTheme = daniTheme2;
