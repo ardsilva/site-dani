@@ -6,7 +6,7 @@ import TopButton from "../../components/topButton/TopButton";
 // import Certifications from "../../containers/certifications/Certifications";
 // import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 // import EducationImg from "./EducationImg";
-// import { competitiveSites, greeting } from "../../portfolio";
+import { greeting } from "../../portfolio";
 // import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
@@ -18,11 +18,11 @@ class Education extends Component {
     const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        <Header theme={theme} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
             <div className="heading-div">
-              {/* <div className="heading-img-div"> */}
+              {/* <div className="heading-img-div" /> */}
               {/* <img
 									src={require("../../assests/images/education.svg")}
 									alt=""
@@ -37,10 +37,10 @@ class Education extends Component {
                   className="greeting-text-p subTitle"
                   style={{ color: theme.secondaryText }}
                 >
-                  {/* {greeting.subTitle} */}
+                  {greeting.anotherTitle}
                 </p>
-                {/* <SocialMedia theme={theme} /> */}
                 <div className="address-btn-div">
+                  {/* <SocialMedia theme={theme} /> */}
                   <Button
                     text="Contato"
                     newTab={false}
@@ -55,6 +55,8 @@ class Education extends Component {
               </div>
             </div>
           </Fade>
+          <div className="main" id="educations" />
+          <div className="educations-header-div" />
           {/* <Educations theme={this.props.theme} /> */}
           {/* {certifications.certifications.length > 0 ? (
             <Certifications theme={this.props.theme} />

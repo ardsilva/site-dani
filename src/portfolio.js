@@ -26,6 +26,8 @@ const greeting = {
   resumeLink: "",
   portfolio_repository: "",
   githubProfile: "",
+  anotherTitle:
+    "Caso nao tenha encontrado o que procura, não tem problema, aqui está só um pouco do que eu consigo fazer por si. Não exite em entrar contato comigo no botão abaixo.",
 };
 
 const socialMediaLinks = [
